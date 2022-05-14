@@ -11,6 +11,7 @@ import SwiftUI
 struct CookbookApp: App {
     @StateObject var menus: ViewModel
 
+    /// init required for @MainActor do push UI changes to main thread
     init() {
         self._menus = StateObject(wrappedValue: ViewModel())
     }

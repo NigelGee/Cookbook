@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {
-                    Picker("Select menu", selection: $vm.menu) {
+                    Picker("Select menu", selection: $vm.selectedMenu) {
                         ForEach(MenuSelection.allCases, id: \.self) {
                             Text($0.rawValue.capitalized)
                         }

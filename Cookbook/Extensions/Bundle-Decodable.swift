@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// This is being used for testing purpose as URL does not exist
 extension Bundle {
     func decode<T: Decodable>(
         _ type: T.Type,

@@ -11,22 +11,25 @@ import Foundation
 final class ViewModel: ObservableObject {
     @Published var menus = [Menu]()
 
-    @Published var menu = MenuSelection.all
+    @Published var selectedMenu = MenuSelection.all
     @Published var selectedFilter = FilterSelection.all
 
+    /// Filter the recipe depends on Menu Selected
     private var menuType: [Recipe] {
-        if menu == .all {
+        if selectedMenu == .all {
             return menus.flatMap { $0.recipes }
         } else {
-            let selectedMenu = menus.filter { $0.type == menu.rawValue.capitalized }
-            return selectedMenu.flatMap { $0.recipes }
+            let selected = menus.filter { $0.type == selectedMenu.rawValue.capitalized }
+            return selected.flatMap { $0.recipes }
         }
     }
 
+    /// Filter the `menuType` if by type
     var filteredRecipes: [Recipe] {
         if selectedFilter == .all {
             return menuType
         } else {
+            // change `value` depends on the last numbers of days required
             guard let weekAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date.now) else {
                 fatalError("Unable to get next day from date")
             }

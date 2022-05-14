@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// To determine if all the menu items should be show or just the newest
 enum FilterSelection: String, CaseIterable {
     case all, latest
 }
