@@ -69,6 +69,7 @@
 			children = (
 				8BAF8820282F92E80072FC48 /* CookbookApp.swift */,
 				8BAF8822282F92E80072FC48 /* ContentView.swift */,
+				8BAF882E282F93610072FC48 /* ViewModel.swift */,
 				8BAF8841282F96BE0072FC48 /* Models */,
 				8BAF883E282F95CE0072FC48 /* Extensions */,
 				8BAF883F282F95EE0072FC48 /* Enums */,
@@ -116,7 +117,6 @@
 		8BAF8841282F96BE0072FC48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8BAF882E282F93610072FC48 /* ViewModel.swift */,
 				8BAF8830282F936B0072FC48 /* Menu.swift */,
 				8BAF8832282F93750072FC48 /* Recipe.swift */,
 			);

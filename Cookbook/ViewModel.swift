@@ -24,16 +24,17 @@ final class ViewModel: ObservableObject {
         }
     }
 
-    /// Filter the `menuType` if by type
+    /// Filter the `menuType` if by date.
     var filteredRecipes: [Recipe] {
         if selectedFilter == .all {
             return menuType
         } else {
             // change `value` depends on the last numbers of days required
-            guard let weekAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date.now) else {
+            guard let hurdleDate = Calendar.current.date(byAdding: .day, value: -7, to: Date.now) else {
                 fatalError("Unable to get next day from date")
             }
-            return menuType.filter { $0.dateCreated >= weekAgo }
+            // Use `<=` if only want recipes before the date. (note: need to change the `FilterSelection` enum.
+            return menuType.filter { $0.dateCreated >= hurdleDate }
         }
     }
 
