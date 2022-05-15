@@ -555,5 +555,74 @@
                 "imageURL": "https://www.maryberry.co.uk/media/recipes/2021/12/14/153_inlineImage.jpg"
             }
         ]
+    },
+    {
+        "type": "Bread",
+        "recipes": [
+            {
+                "id": "65A919DF-E2A3-4EC2-A74E-F5353FAB7396",
+                "name": "White Loaf Bread",
+                "creator": "Nigel Gee",
+                "dateCreated": "2022-05-15T00:00:00+01:00",
+                "serves": 5,
+                "ingredients": [
+                    {
+                        "name": "Water",
+                        "quantity": 260,
+                        "measurement": "g"
+                    },
+                    {
+                        "name": "Olive oil",
+                        "quantity": 1.5,
+                        "measurement": "tbsp"
+                    },
+                    {
+                        "name": "Salt",
+                        "quantity": 1.5,
+                        "measurement": "tsb"
+                    },
+                    {
+                        "name": "Sugar",
+                        "quantity": 1.5,
+                        "measurement": "tbsp"
+                    },
+                    {
+                        "name": "Dried Semi Skimmed milk",
+                        "quantity": 1.5,
+                        "measurement": "tbsp"
+                    },
+                    {
+                        "name": ", spiralized into spaghetti-like strands",
+                        "quantity": 3,
+                        "measurement": "Courgettes"
+                    },
+                    {
+                        "name": "Strong White Flour",
+                        "quantity": 400,
+                        "measurement": "g"
+                    },
+                    {
+                        "name": "Yeast",
+                        "quantity": 1.5,
+                        "measurement": "tsb"
+                    }
+                ],
+                "method": [
+                    {
+                        "step": 1,
+                        "text": "Dissolve the salt, sugar and dried milk in warm water."
+                    },
+                    {
+                        "step": 2,
+                        "text": "Add olive oil to container then put in flour and yeast on top"
+                    },
+                    {
+                        "step": 3,
+                        "text": "Inset container into bread maker and switch on."
+                    }
+                ],
+                "imageURL": "https://www.maryberry.co.uk/media/recipes/2021/12/14/153_inlineImage.jpg"
+            }
+        ]
     }
 ]

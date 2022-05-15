@@ -10,7 +10,7 @@ import Foundation
 struct Recipe: Codable, Identifiable {
     struct Ingredient: Codable {
         let name: String
-        let quantity: Int
+        let quantity: Double
         let measurement: String
     }
 
